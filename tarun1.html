@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Quest Adventure</title>
+    <link rel="stylesheet" href="style111.css">
+</head>
+<body>
+   
+    <div id="start-screen" class="container">
+        <h1>Welcome to the Forest Quest Adventure</h1>
+        <p>Are you brave enough to venture into the mystical forest and find your way back home?</p>
+        <button id="start-button">Start Game</button>
+        <br>
+        <img src="s1.jpg" alt="Forest Entrance Image" />
+    </div>
+    <div id="game-screen" class="container">
+        <h1>Forest Quest Adventure</h1>
+        <div id="story"></div>
+        <div id="choices"></div>
+        <div id="endText"></div>
+        <div id="image-container">
+            <img id="level-image" src="" alt="Level Image">
+        </div>
+    </div>
+    <script src="script11.js"></script>
+    <footer>
+        <div>
+            <h3><u>ADDENDUM</u></h3>
+            <div>
+                <h4>Game Design:</h4>
+                <p>This game was created as an interactive text-based adventure, with each level presenting choices that lead to unique outcomes. The storyline is centered around escaping a haunted house, featuring various eerie scenarios and twists to keep players engaged.</p>
+            </div>
+            <div>
+                <h4>HTML Structure:</h4>
+                <p>The HTML layout is divided into distinct sections: start screen, game screen, and footer. This clear separation allows easy content manipulation using JavaScript.</p>
+            </div>
+            <div>
+                <h4>CSS Styling:</h4>
+                <p>The CSS was designed to convey a dark and spooky theme, enhancing the haunted house atmosphere. Responsive design principles were applied to ensure it looks good on various screen sizes.</p>
+            </div>
+            <div>
+                <h4>JavaScript Functionality:</h4>
+                <p>JavaScript manages the game’s core functions, including level rendering, player choice handling, and game state management.</p>
+                <p>A dynamic rendering system updates the display based on the current level, including text, choices, and images.</p>
+                <p>Endgame scenarios display appropriate success or failure messages, with a restart option available.</p>
+            </div>
+            <div>
+                <h4>Challenges and Solutions:</h4>
+                <p>Managing the game’s branching storyline complexity was challenging, but careful structuring of level data and conditional rendering helped achieve the desired outcomes.</p>
+                <p>To maintain smooth level transitions and a cohesive story, rigorous testing and debugging were essential.</p>
+                <p>Integrating dynamic content, such as the last modified date in the footer, required proficiency in DOM manipulation and JavaScript’s Date object.</p>
+            </div>
+            <div>
+                <h4>Insights Gained:</h4>
+                <p>This project highlighted the importance of organized code and modular design, especially for interconnected components.</p>
+                <p>I deepened my understanding of JavaScript event handling, DOM manipulation, and CSS styling.</p>
+                <p>Testing and iterative development were key for refining the player experience and resolving bugs.</p>
+            </div>
+        </div>
+        
+        <p>Last updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+
+</html>
