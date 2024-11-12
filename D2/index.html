@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style111.css">
+</head>
+<body>
+    <header>
+        <h1> Tarun Vudugula (ITC 505) - 11/11/2024 </h1>
+        <h1>Welcome to the Interactive Webpage</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Image Rollover Effect</h2>
+            <img id="rollover-image" src="s3.jpg" alt="Rollover Image">
+        </section>
+        
+        <section>
+            <h2>Button Color Changer</h2>
+            <button id="color-button">Click me to change color</button>
+        </section>
+        
+        <section>
+            <h2>Text Input Field</h2>
+            <form id="input-form">
+                <label for="user-input">Enter some text:</label>
+                <input type="text" id="user-input">
+                <button type="button" id="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tarun Vudugula | 11-11-2024 | ITC-505</p>
+    </footer>
+    
+    <script src="script11.js"></script>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
