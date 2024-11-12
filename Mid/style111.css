@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgreen;
+    border-radius: 8px;
+    color: white;
+}
+
+h1 {
+    color: yellow;
+}
+
+button {
+    background-color: darkorange;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin: 5px; 
+}
+
+
+#start-screen {
+    display: block;
+}
+
+#game-screen {
+    display: none;
+}
